@@ -17,4 +17,4 @@ describe("discount function", function()
 		var discount = discountCalculator.discount();
 		assert.equal(discount, 0, discount + "");
 	});
-});
+})
