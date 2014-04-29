@@ -2,3 +2,12 @@ language: node_js
 node_js:
 - '0.10'
 before_install: npm install -g mocha
+deploy:
+  provider: s3
+  access_key_id: AKIAIIILO6W5YR7WZPFQ
+  secret_access_key:
+    secure: dVX2ENE+YwQgBr+WOD4T418PRRL+6TN9ywX3UJbFo0V0Sr/zSDmvIspu/Akrpc4/o/8dm98t46nlVTJ47QVkMcXktjB511bzhbAZotVNtcgwE1nW8krRFshE3l/PDZxnQ9LYH6r7eulKYwwIBf9ti3miGwVNfEEJh4bCo6fuQBU=
+  bucket: deploy-weeia
+  upload-dir: Bujakowski
+  on:
+    repo: solid-rock/cTestBujakowski
